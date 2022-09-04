@@ -8,39 +8,91 @@
     }
 }
 
+
 @media only screen and (max-width: 1023px){
-    .logo{
-        width: 300px;
-        margin-left: 40px;
-    }
-
-    .main-nav{
-        margin-top: 40px;
-        margin-right: 15px;
-    }
-
-    .main-nav li{
-        margin-right: 15px;
-    }
-
-    .heading-main-box{
-        transform: translate(-20%, -50);
-    }
-}
-
-@media only screen and (max-width: 767px){
-    .main-nav{
-        display: none;
+    nav {
+        padding: 20px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgba(0, 8, 15, 0.616);
     }
     
+    .main-nav li:hover {
+        background-color: rgb(143, 172, 197);
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    .card {
+        height: 500px;
+        width: 90%;
+        background-color: #f2f2f2d8;
+        padding: 30px;
+        display: inline-block;
+        margin: 20px;
+        position: relative;
+        border-radius: 12px;
+        z-index: -1;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all .5s ease-in-out;
+    }
+    
+    nav .main-nav{
+        top: 115px;
+        position: absolute;
+        margin-right: 0;
+        margin-left: -100px;
+        width: 100%;
+        display: none;
+    }
+
+    .sticky .main-nav{
+        top: 100px;
+        position: absolute;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    nav li {
+        display: block;
+        padding: 20px 0 20px 100px;
+        width: 100%;
+        cursor: pointer;
+        background-color: rgba(0, 8, 15, 0.616);
+    }
+
+
+    
+    .sticky li {
+        display: block;
+        padding: 20px 0 20px 100px;
+        width: 100%;
+        background-color: rgba(0, 8, 15, 0.616);
+        cursor: pointer;
+    }
+    
+    .sticky li:hover {
+        background-color: rgb(143, 172, 197);
+    }
+
+
+    .logo {
+        width: 75px;
+    }
+
+    .sticky .logo {
+        width: 75px;
+    }
+
     .mobile-nav-icon{
         display: block;
     }
 
-    .logo{
-        width: 350px;
-        margin-left: 12%;
-    }
 
     h1{
         word-spacing: 2px;
@@ -57,12 +109,109 @@
 }
 
 @media only screen and (max-width: 570px){
+    nav {
+        padding: 20px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .container {
+        margin-left: 5vw;
+    }
+
+    .card {
+        height: 500px;
+        width: 350px;
+        background-color: #f2f2f2d8;
+        padding: 30px;
+        display: inline-block;
+        margin: 20px;
+        position: relative;
+        border-radius: 12px;
+        z-index: -1;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all .5s ease-in-out;
+    }
+  
+    .main-nav{
+        top: 100px;
+        position: absolute;
+        margin-right: 0;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sticky li {
+        display: block;
+        padding: 20px 0 20px 100px;
+        width: 100%;
+        background-color: rgba(0, 8, 15, 0.616);
+        cursor: pointer;
+    }
+    
+    .sticky li:hover {
+        background-color: rgb(143, 172, 197);
+    }
+
+
+    .logo {
+        width: 75px;
+    }
+
+    .sticky .logo {
+        width: 75px;
+    }
+
     .mobile-nav-icon{
         display: block;
     }
 }
 
 @media only screen and (max-width: 480px){
+    nav {
+        padding: 20px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .main-nav{
+        top: 100px;
+        position: absolute;
+        margin-right: 0;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sticky li {
+        display: block;
+        padding: 20px 0 20px 100px;
+        width: 100%;
+        background-color: rgba(0, 8, 15, 0.616);
+        cursor: pointer;
+    }
+    
+    .sticky li:hover {
+        background-color: rgb(143, 172, 197);
+    }
+
+
+    .logo {
+        width: 75px;
+    }
+
+    .sticky .logo {
+        width: 75px;
+    }
+
+    .mobile-nav-icon{
+        display: block;
+    }
+
+
     html{
         font-size: 12px;
     }
@@ -71,22 +220,8 @@
         font-size: 200%;
     }
 
-    .logo{
-        width: 220px;
-        margin-top: 10%;
-        margin-left: 20%;
-    }
-
     .heading-main-box{
         transform: translate(-10%,-50%);
     }
 
-    .mobile-nav-icon{
-        top: 100px;
-    }
-
-    .sticky .logo{
-        width: 200px;
-        margin-top: -25px;
-    }
 }

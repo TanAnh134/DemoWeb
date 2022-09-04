@@ -1,0 +1,100 @@
+let active = 2;
+let $card = document.querySelectorAll(".card");
+let $next_btn = document.getElementById("next-btn");
+let $prev_btn = document.getElementById("prev-btn");
+let $slide = document.querySelector('.slide');
+
+$next_btn.onclick = nextCard
+$prev_btn.onclick = prevCard
+
+// $prev_btn.onclick = previousCard();
+
+$(document).ready(
+    function(){
+        $('.about-section').waypoint(
+            function(direction){
+                if (direction == "down"){
+                    $('nav').addClass('sticky');
+                }else{
+                    $('nav').removeClass('sticky')
+                }
+            }, {
+                offset: '600px'
+            }
+        )
+
+
+        //mobile nav
+        $('.mobile-nav-icon').click(
+            function(){
+                $('.main-nav').slideToggle(200);
+
+                if($('.mobile-nav-icon').hasClass('fa-bars')){
+                    $('.mobile-nav-icon').addClass('fa-times');
+                    $('.mobile-nav-icon').removeClass('fa-bars');
+                }else{
+                    $('.mobile-nav-icon').addClass('fa-bars');
+                    $('.mobile-nav-icon').removeClass('fa-times');
+                }
+            }
+        )
+    }
+)
+
+function nextCard() {
+    $slide.appendChild($card[active - 2].cloneNode(true));
+    console.log($card[active - 2].innerHTML);
+    $card[active - 2].remove();
+    $card.shift
+    console.log($card);
+    if(active < 6) active++;
+    else active = 2;
+}
+
+function prevCard() {
+    $slide.appendChild($card[active + 2].cloneNode(true));
+    console.log($card[active + 2].innerHTML);
+    $card[active + 2].remove();
+    $card.shift
+    console.log($card);
+    if(active > -1) active--;
+    else active = 2;
+}
+
+// let timer = setInterval(nextCard, 1500);
+
+//Animation plugin
+AOS.init();
+
+
+let active = 2;
+let $card = document.querySelectorAll(".card");
+let $next_btn = document.getElementById("next-btn");
+let $prev_btn = document.getElementById("prev-btn");
+let $slide = document.querySelector('.slide');
+
+$next_btn.onclick = nextCard
+$prev_btn.onclick = prevCard
+
+// $prev_btn.onclick = previousCard();
+function nextCard() {
+    $slide.appendChild($card[active - 2].cloneNode(true));
+    console.log($card[active - 2].innerHTML);
+    $card[active - 2].remove();
+    $card.shift
+    console.log($card);
+    if(active < 4) active++;
+    else active = 2;
+}
+
+function prevCard() {
+    $slide.appendChild($card[active + 2].cloneNode(true));
+    console.log($card[active + 2].innerHTML);
+    $card[active + 2].remove();
+    $card.shift
+    console.log($card);
+    if(active > -1) active++;
+    else active = 2;
+}
+
+// let timer = setInterval(nextCard, 1500);

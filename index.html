@@ -7,21 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
     <link href="https://fonts.googleapis.com/css?family=Arvo:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js">
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <link rel="stylesheet" type="text/css" href="src/css/queries.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header id="home">
         <nav>
-            <a href="#home"><img class="logo" src="" alt="">INTRODUCTION</a>
+            <a href="#home"><img class="logo" src="src/image/2png.png" alt=""></a>
             <ul class="main-nav">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#capable">What we are capable of</a></li>
                 <li><a href="#members">Members</a></li>
-                <li><a href="#members">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
             <i class="fa fa-bars mobile-nav-icon"></i>
         </nav>
@@ -29,50 +36,349 @@
         <div class="row">
             <div class="heading-main-box">
                 <h1 class="heading-main-text">
-                    Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut.
+                    Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt
+                    ut.
                 </h1>
             </div>
         </div>
     </header>
     <section class="about-section" id="about">
+        <h2>About Us</h2>
         <div class="row">
-            <h2>About Us</h2>
             <p class="p-long">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Zen Media là một công ty truyền thông đa lĩnh vực được thành lập từ năm 2021 với nhiệm vụ đem đến những sản phẩm truyền thông có hàm lượng tri thức cao và mang bản sắc riêng. 
+                Thay vì tập trung vào những con số thống kê, những sản phẩm truyền thông của Zen tập trung vào giá trị đem lại cho khách hàng. 
+                Từ đó, Zen Media kiến tạo nên một tập khách hàng không lớn, nhưng trung thành, sở hữu nền tri thức cao, có khả năng tự duy trì và phát triển. 
             </p>
         </div>
     </section>
     <section class="capable-section" id="capable">
+        <h2>What we are capable of?</h2>
         <div class="row">
-            <h2>What we are capable of?</h2>
             <p class="p-long">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Hiện tại, Zen Media đang hoạt động ở các mảng nội dung về thể thao, giải trí, giáo dục, và phát triển phần mềm. 
+                Các sản phẩm của chúng tôi là kết quả của quá trình lao động trí não nghiêm túc, khoa học và cởi mở. 
+                Nhờ đó, chúng tôi tự hào rằng mình là một trong những đơn vị truyền thông hiếm hoi tạo ra những sản phẩm mang tính giáo dục cao trong thời đại mà truyền thông đang xoay quanh những lượt tương tác vô hồn, và những nội dung giải trí vô nghĩa như ngày nay. 
+                Với khả năng hiện có, Zen Media còn tự tin đưa các sản phẩm sáng tạo ra thị trường quốc tế. Bởi trong kỷ nguyên 4.0, nguồn thông tin từ sự kết nối không biên giới sẽ tạo điều kiện giúp chúng tôi mang đến nhiều tri thức hơn nữa cho người dùng. Với những nhiệm vụ trên, Zen Media có sứ mệnh tạo nên một Mạng lưới tri thức đa lĩnh vực, qua đó góp phần giáo dục, nâng cao hiệu quả, và giúp đỡ từng thành viên trong mạng lưới cùng nhau phát triển.
             </p>
         </div>
     </section>
     <section class="members-section" id="members">
-        <div class="row">
-            <h2>Members</h2>
+        <h2>MEMBERS</h2>
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsumn</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">DVR</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Máy dập Hoàng Mai</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="content">
+                            <div class="member-img">
+                                <img src="src/image/png.png" alt="Face">
+                            </div>
+                            <div class="information">
+                                <div class="name">Lorem Ipsum</div>
+                                <div class="position">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
     <section class="project-section" id="projects">
+        <h2>Projects</h2>
         <div class="row">
-            <h2>Projects</h2>
+            <div class="col span-1-of-4 about-picture">
+                <img src="src/image/png.png" alt="">
+                <p class="picture-title">
+                    Zen Tactics
+                </p>
+                <div class="project-links">
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <img src="src/image/png.png" alt="">
+                <p class="picture-title">
+                    Zen Cine
+                </p>
+                <div class="project-links">
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <img src="src/image/png.png" alt="">
+                <p class="picture-title">
+                    Zen eSport
+                </p>
+                <div class="project-links">
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <img src="src/image/png.png" alt="">
+                <p class="picture-title">
+                    Modern Football
+                </p>
+                <div class="project-links">
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
-        <p>
-            Copyright &copy; 2022 by JASON TEAM
-        </p>
+        <div class="quick-follow">
+            <p>
+                <span>Follow Us:</span>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+            </p>
+        </div>
+        <div class="footer-nav">
+            <div class="fot-col">
+                <p>Company</p>
+
+                <ul>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Capable">What we are capable for</a></li>
+                    <li><a href="#Capable">Members</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="fot-col">
+                <p>What's new</p>
+
+                <ul>
+                    <li><a href="">Zentlemen</a></li>
+                    <li><a href="">Zentlemen App</a></li>
+                    <li><a href="">Zen Membership</a></li>
+                </ul>
+            </div>
+
+            <div class="fot-col">
+                <p>Policy &amp;	Terms</p>
+
+                <ul>
+                    <li><a href="">Lorem Ispum</a></li>
+                    <li><a href="">Lorem Ispum</a></li>
+                    <li><a href="">Lorem Ispum</a></li>
+                    <li><a href="">Lorem Ispum</a></li>
+                </ul>
+            </div>
+
+            <div class="fot-col">
+                <p>More</p>
+
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Lorem Ispum</a></li>
+                    <li><a href="">Lorem Ispum</a></li>
+                    <li><a href="">Lorem Ispum</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="./src/image/2png.png" alt="'Zen'" class="footer-logo">Copyright &copy; 2022 Jason Team. All right reserved
+        </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="src/js/script.js"></script>
 </body>
 

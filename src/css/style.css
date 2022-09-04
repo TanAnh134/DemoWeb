@@ -11,7 +11,6 @@ html{
     background-color: #ffffff;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth !important;
-
 }
 
 body{
@@ -32,6 +31,9 @@ body{
     margin: 0 auto;
 }
   
+i {
+    cursor: pointer;
+}
 
 h2{
     text-transform: uppercase;
@@ -52,7 +54,7 @@ h2:after{
 }
 
 .p-long{
-    text-align: center;
+    text-align: justify;
     font-size: 22px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -65,16 +67,19 @@ section{
     padding: 50px;
 }
 
-li{
+nav li{
     text-transform: uppercase;
 }
+
+
+
 
 /*--------------------------------------------------------*/
 /*-------------------------HEADER-------------------------------*/
 /*--------------------------------------------------------*/
 
 header{
-    background-image: linear-gradient(rgba(2,33,64,0.8), rgba(45,95,93,0.85)), url("../image/bg.jpg");
+    background-image: linear-gradient(rgba(255, 32, 0, 0.8), rgba(18, 98, 216, 0.85)), url("../image/bg.jpg");
     background-size: cover; 
     background-position: center;
     height: 100vh;
@@ -82,18 +87,20 @@ header{
 }
 
 .logo{
-    width: 350px;
+    width: 100px;
     float: left;
-    margin-left: 70px;
-    margin-top: -50px;
-    margin-bottom: -100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
 }
 
 .main-nav{
     float: right;
     list-style: none;
-    margin-right: 50px;
-    margin-top: 30px;
+    margin-right: 0px;
 }
 
 .main-nav li{
@@ -127,34 +134,173 @@ header{
 
 /*-------------------------STICKY-------------------------------*/
 .sticky{
-    background-color: rgba(0, 8, 15, 0.9);
+    background-color: rgba(0, 8, 15, 0.616);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 900;
     width: 100%;
-    height: 70px;
-    padding-bottom: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
 }
 
 .sticky .logo{
+    width: 75px;
+    
+}
+
+/*-------------------------MEMBERS-------------------------------*/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    max-width: 80%;
+    justify-content: center;
+    overflow-x: hidden;
+    height: 525px;
+}
+
+.btn-slide {
+    top: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+.btn-slide:hover {
+    background-color: #f2f2f2d8;
+}
+
+.fa-angle-left {
+    float: left;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+
+.card {
+    height: 500px;
+    width: 350px;
+    background-color: #f2f2f2d8;
+    padding: 30px;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    z-index: -1;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    transition: all .5s ease-in-out;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #1262D8;
+    border-radius: 12px 12px 0 0;
+}
+
+
+.member-img {
     width: 250px;
-    margin-top: -40px;
-    margin-bottom: -70px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #1262D8;
+    margin: 0 auto 20px;
+    z-index: 100;
+}
+
+.member-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+
+.card .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.card .information .name{
+    padding: 0 0 10px;
+    font-weight: 600;
+}
+
+.card .information .position {
+    padding: 0 10px;
+}
+
+
+/*-------------------------PROJECTS-------------------------------*/
+
+.about-picture{
+    justify-self: center;
+    border: 2px;
+    border-radius: 12px;
+    transition: all .5s ease-in-out;
+}
+
+.project-section .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-picture img{
+    width: 100%;
+    padding: -10px;
+}
+
+.picture-title{
+    text-align: center;
+}
+
+.project-links {
+    margin: 15px auto;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    border-top: 1px solid;
 
 }
 
-.sticky .main-nav{
-    margin-top: 30px;
+.project-links i {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.project-links i:hover{
+    transition: .4s;
+    color: #FCB22B;
 }
 
 /*-------------------------MOBILE-------------------------------*/
 .mobile-nav-icon{
     font-size: 200%;
     color: white;
-    position: absolute;
-    top: 55px;
-    right: 100px;
+    margin-left: auto;
     display: none;
     cursor: pointer;
 }
@@ -167,9 +313,74 @@ header{
 /*--------------------------------------------------------*/
 /*-------------------------FOOTER-------------------------------*/
 /*--------------------------------------------------------*/
-footer{
-    text-align: center;
-    background-color: black;
+
+footer {
+    /* background-color: #1262D8; */
+    background-color: #6B2AC6;
     color: white;
-    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quick-follow {
+    border-bottom: 1px solid ;
+}
+
+.quick-follow span {
+    margin-right: 20px;
+}
+
+.quick-follow i {
+    top: 0;
+    font-size: 20px;
+    margin: 0px 15px 0 10px;
+    color: black;
+    font-size: 24px;
+}
+
+.quick-follow i:hover {
+    transition: .4s;
+    color: #fff;
+}
+
+.quick-follow, .footer-nav {
+    padding: 20px 100px;
+    font-weight: 600;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #ffffff;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+}
+
+.footer-nav li a{
+    font-weight: 400;
+    line-height: 2.0;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.fot-col p {
+    line-height: 3;
+    font-weight: 600;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    padding: 10px 100px;
+    /* background-color: #FF2200; */
+    background-color: #FCB22B;
+}
+
+.footer-logo {
+    width: 36px;
+    margin-right: 10px;
+    align-self: center;
 }
